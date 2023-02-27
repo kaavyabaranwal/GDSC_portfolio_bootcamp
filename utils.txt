@@ -1,0 +1,35 @@
+RESOURCES TO BE USED AS AND WHEN INSTRUCTED!
+
+FONT -
+(add in style.css)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+
+COLOR VARIABLES -
+:root {
+    --athens-gray: #eeecf1;
+    --tamarind: #381a16;
+    --potters-clay: #8e593e;
+    --pale-oyster: #9d8c82;
+    --muesli: #ab7d62;
+    --thatch: #b39b8f;
+    --rodeo-dust: #caaf9e;
+    --tide: #c0b7b4;
+    --cold-turkey: #cfc0bd;
+    --beige: #f7f7f7;
+    --deep-gray: rgb(59, 59, 59);
+}
+
+GENERATE YOUR OWN COLOR PALLETE - https://imagecolorpicker.com/en
+
+WORK EXP SECTION IMG TAG - 
+<img src="https://img.icons8.com/ios/50/null/programming-flag.png" />
+
+PROJECT SECTION IMG TAG -
+ <img class="work-img" src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
+
+
+FONTAWESOME CDN TAG - 
+(add in index.html)
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
