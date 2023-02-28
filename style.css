@@ -18,30 +18,36 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .home {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("images/background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("images/jess-bailey-q10VITrVYUM-unsplash.jpg");
     background-position: center;
     background-size: cover;
+
 }
 
 .home .navbar {
     width: 100vw;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 0.596);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(0, 0, 0, 0.617);
     position: fixed;
 }
 
 .navbar .name {
     color: white;
-    font-weight: 500;
-    letter-spacing: 2px;
     margin: 0 40px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .navbar .links ul {
@@ -50,8 +56,8 @@
 }
 
 .links ul li {
-    list-style: none;
     margin: 0 45px;
+    list-style: none;
 }
 
 a {
@@ -81,10 +87,9 @@ a {
 
 .intro .main_name {
     font-size: 5rem;
+    /* font-style: italic; */
     font-weight: 700;
 }
-
-/* ABOUT PAGE CSS */
 
 .about {
     height: 90vh;
@@ -92,6 +97,7 @@ a {
     display: flex;
     align-items: center;
 }
+
 
 .profile_img {
     display: flex;
@@ -105,6 +111,7 @@ a {
     border: 6px solid var(--athens-gray);
 }
 
+
 .content {
     height: 25vh;
     max-width: 55vw;
@@ -115,18 +122,13 @@ a {
     align-items: center;
 }
 
-.content .socials ul {
-    display: flex;
-    width: auto;
-}
-
 .content .heading {
     color: var(--potters-clay);
     text-align: center;
-
 }
 
 .heading h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     line-height: 1.5;
     font-weight: 700;
@@ -136,6 +138,11 @@ a {
     text-align: justify;
     line-height: 23px;
     font-size: 20px;
+}
+
+.content .socials ul {
+    display: flex;
+    width: auto;
 }
 
 .socials a {
@@ -148,23 +155,224 @@ a {
 }
 
 .socials ul li {
-    list-style: none;
     margin: 0 45px;
+    list-style: none;
+
 }
 
-@media screen and (max-width : 1080px) {
+/* 
+frame {
+    border: 14px solid #8e593e;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: 3;
+
+} */
+
+/* work exp css */
+
+.work_exp {
+    background-color: var(--beige);
+}
+
+.service-top {
+    text-align: center;
+    max-width: 100%;
+}
+
+.service-top h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--potters-clay);
+    font-weight: 700;
+    margin: 10vh auto 0 auto;
+
+}
+
+.service-top p {
+    font-size: 20px;
+    color: var(--rodeo-dust);
+}
+
+.service-bottom {
+    text-align: center;
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.card {
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    /* max-width: 900px; */
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    height: auto;
+}
+
+
+.service-bottom h1 {
+    font-size: 1.5rem;
+    color: var(--tamarind);
+}
+
+.service-bottom h3 {
+    font-style: italic;
+    color: var(--muesli);
+}
+
+.service-bottom p {
+    font-size: 15px;
+    color: var(--muesli);
+}
+
+
+.service-bottom ul {
+    list-style-type: disc;
+    margin: 10px auto;
+}
+
+.service-bottom li {
+    text-align: center;
+    line-height: 10px;
+    padding-bottom: 10px;
+    color: var(--thatch);
+}
+
+/*PROJECTS CSS*/
+
+.projects {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--tamarind);
+    background-color: var(--athens-gray);
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--potters-clay);
+    font-weight: 700;
+    margin: 10vh auto 0 auto;
+}
+
+.projects p {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    background: var(--beige);
+}
+
+.card1 img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.card1 .work-content {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1rem;
+    color: var(--tamarind);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.card1 .work-info {
+    color: var(--muesli);
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+    height: auto;
+
+}
+
+.card1 .work-content:hover {
+    color: var(--tide);
+}
+
+.card1:hover {
+    box-shadow: 0 0 1.5rem gray;
+}
+
+
+/* FOOTER CSS */
+.footer{
+    height : 130px;
+    background : var(--beige);
+    display : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items: center;
+    padding : 45px;
+
+}
+
+i{
+    font-size : 30px;
+    line-height : 40px;
+    margin : 10px;
+    color : rgba(0, 0, 0, 0.532);
+}
+i:hover{
+    color : var(--muesli);
+}
+.desginer, .copyright{
+    color : var(--deep-gray);
+}
+
+.designer a{
+    color : var(--deep-gray);
+}
+.designer a:hover{
+    color : var(--muesli);
+}
+
+/* media queries for responsiveness */
+@media screen and (max-width: 1080px) {
     .navbar .links {
         display: none;
     }
 
     .navbar .name {
-        text-align: center;
         width: 100%;
+        text-align: center;
     }
 
     .intro .main_name {
         font-size: 4rem;
     }
+
+    /* ABOUT MOBILE VIEW */
 
     .about {
         flex-direction: column;
@@ -181,18 +389,50 @@ a {
         font-size: 16px;
     }
 
-    .content .info{
-        text-align : center;
+    .content .info {
+        text-align: center;
         line-height: 20px;
-        font-size : 16px;
+        font-size: 16px;
     }
 
-    .content .socials ul{
-        display : grid;
+    .content .socials ul {
+        display: grid;
         grid-template-columns: auto auto;
-        margin : 40px auto;
+        margin: 40px auto;
     }
-    .socials ul li{
+
+    .socials ul li {
         margin: 7px 27px;
+    }
+
+    /* WORK EXP MOBILE VIEW */
+
+    .service-bottom {
+        margin: 40px auto;
+    }
+
+    .service-bottom .card {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+    }
+
+    .card li {
+        line-height: 20px;
+
+    }
+    .projects h1, .service-top h1{
+        margin : 5vh auto 0 auto;
+    }
+
+
+    /* PROJECTS SECTION MOBILE VIEW */
+
+    .work {
+        grid-template-columns: auto;
+    }
+
+    .card1 {
+        width: 90%;
     }
 }
